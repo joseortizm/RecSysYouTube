@@ -1,4 +1,4 @@
-#Systema de recomendación híbrido
+# Systema de recomendación híbrido
 
 A partir de una busqueda del usuario en la plataforma YouTube, el sistema recomienda apartir de:
 1. El archivo u2comentarios.py a partir del promedio general del analisis del sentimiendo de cada comentario de los usuarios
