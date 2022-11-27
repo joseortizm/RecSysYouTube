@@ -84,6 +84,7 @@ data_by_date.timestamp = pd.to_datetime(datos_ranking_simulado.timestamp, unit="
 data_by_date = data_by_date.sort_values(by="timestamp", ascending=False).reset_index(drop=True)
 
 data_by_date["year"]  = data_by_date.timestamp.dt.year
+data_by_date["month"] = data_by_date.timestamp.dt.month
 rating_by_year = data_by_date.groupby(["year","month"])["rating"].count().reset_index()
 rating_by_year["date"] = pd.to_datetime(rating_by_year["year"].astype("str")  +"-"+rating_by_year["month"].astype("str") +"-1")
 ##
